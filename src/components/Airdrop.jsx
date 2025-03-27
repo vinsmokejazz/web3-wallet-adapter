@@ -20,10 +20,14 @@ export const Airdrop=()=>{
   }
 }
 
-  return <div>
+  return <div className="flex flex-col justify-center min-h-screen items-center ">
 
-    <input type="text" ref={inputRef} placeholder="Amount"/>
-    <button onClick={sendAirdropToUser}>send SOL</button>
+    <h1 className=" text-7xl transition-colors bg-gradient-to-r from-white to-gray-500 
+    bg-clip-text text-transparent font-bold pb-2 ">Gucet</h1>
+    <h2 className="text-xl text-white pb-4"> Free Airdrop SOL to your wallet!!</h2>
+
+    <input className="w-md h-12 bg-gray-100  rounded-2xl mb-3 items-center p-4" type="text" ref={inputRef} placeholder="Enter SOL"/>
+    <button className="bg-purple-800 w-30 h-10 rounded-2xl text-white items-center" onClick={sendAirdropToUser}>Airdrop SOL</button>
   </div>
 
 }
