@@ -23,7 +23,11 @@ export const Airdrop=()=>{
         return;
       }
     
-    await connection.requestAirdrop(wallet.publicKey, amount*1000000000)
+    await connection.requestAirdrop(wallet.publicKey, amount*1000000000);
+
+    if(inputRef.current){
+      inputRef.current.value='';
+    }
     alert("airdropped");
     
   }catch(error){
